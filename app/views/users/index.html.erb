@@ -4,13 +4,6 @@
 <%= will_paginate %>
 
 <ul class="users">
-  <!--<% @users.each do |user| %>-->
-    <!--<li>-->
-    <!--  <%= gravatar_for user, size: 50 %>-->
-    <!--  <%= link_to user.name, user %>-->
-    <!--</li>-->
-  <!--<%= render user %> Userクラスのuser変数に対して実行している⇒Railsは自動的に_user.html.erb-->
-  <!--<% end %>-->
   <%= render @users %>
 </ul>
   

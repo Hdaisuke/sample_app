@@ -1,5 +1,5 @@
 <%= form_for(@user) do |f| %>
-  <%= render 'shared/error_messages', object: @user %>
+  <%= render 'shared/error_messages', object: @user %>  <!--object: @userはobject: f.objectでもいいはず？　リスト13.42-->
 
   <%= f.label :name %>
   <%= f.text_field :name, class: 'form-control' %>
