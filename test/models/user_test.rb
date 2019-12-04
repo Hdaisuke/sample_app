@@ -65,7 +65,7 @@ class UserTest < ActiveSupport::TestCase
   end
   
   test "authenticated? should return false for a user with nil digest" do
-    assert_not @user.authenticated?('')
+    assert_not @user.authenticated?(:remember, '')
   end
   
   #userを新規登録しmicropostを一件登録。そして@user.destroyした結果、Micropost.countの差は"-1"である
